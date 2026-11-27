@@ -1,0 +1,58 @@
+.wrap { max-width: 880px; margin: 0 auto; padding: 48px 24px 64px; display: flex; flex-direction: column; gap: 24px; }
+.top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 14px; }
+.logo.big { width: 44px; height: 44px; border-radius: 12px; }
+h1 { margin: 0; font-size: 26px; }
+.top p { margin: 4px 0 0; }
+.top-right { display: flex; align-items: center; gap: 14px; }
+.small { font-size: 13px; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 24px; }
+.panel h2 { margin: 0; font-size: 18px; font-weight: 600; }
+.panel > p { margin: 6px 0 16px; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.card { position: relative; display: flex; gap: 12px; align-items: flex-start; min-height: 96px; padding: 16px; border-radius: 12px; border: 1px solid #2a2a30; background: var(--card); cursor: pointer; }
+.card input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.card .box { width: 22px; height: 22px; border-radius: 6px; border: 2px solid #52525b; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.card:has(input:checked) { border-color: var(--accent); background: var(--accent-bg); }
+.card:has(input:checked) .box { background: var(--accent); border-color: var(--accent); }
+.card:has(input:checked) .box::after { content: "✓"; color: var(--ink); font-weight: 700; font-size: 14px; }
+.card:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+.card-text { display: flex; flex-direction: column; gap: 6px; }
+.card-title { font-size: 15px; font-weight: 600; }
+.card-text .muted { font-size: 13px; }
+
+.rows { display: flex; flex-direction: column; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line); flex-wrap: wrap; }
+.row-text { display: flex; flex-direction: column; gap: 4px; flex: 1 1 300px; }
+.row-text label { font-size: 15px; font-weight: 500; }
+.row-text .muted { font-size: 13px; }
+select.input { min-width: 140px; }
+
+.add { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+.add .input { flex: 1 1 260px; }
+.list { list-style: none; margin: 0; padding: 0; }
+.list li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line); }
+.list .who { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.list .who strong { font-weight: 500; overflow-wrap: anywhere; }
+.list .who span { font-size: 12px; }
+.list button { height: 36px; padding: 0 12px; border-radius: 8px; border: 1px solid var(--line-2); background: transparent; color: #d4d4d8; font-size: 13px; }
+.list button:hover { background: #26262b; }
+.empty { margin: 8px 0 0; font-size: 13px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; padding: 4px 4px 4px 12px; border-radius: 999px; border: 1px solid var(--line-2); }
+.chip button { width: 28px; height: 28px; border-radius: 14px; border: none; background: transparent; color: var(--muted); font-size: 16px; line-height: 1; }
+.chip button:hover { background: #26262b; color: var(--text); }
+
+.adv summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; }
+.adv summary::-webkit-details-marker { display: none; }
+.adv summary::after { content: "▾"; color: var(--muted); }
+.adv[open] summary::after { content: "▴"; }
+.patterns { display: grid; gap: 8px; }
+.patterns label { font-weight: 500; margin-top: 6px; }
+.area { height: auto; padding: 10px 14px; resize: vertical; font-family: ui-monospace, Consolas, monospace; font-size: 13px; }
+
+.data { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+.data p { margin: 6px 0 0; }
+.btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.foot { min-height: 20px; margin: 0; }

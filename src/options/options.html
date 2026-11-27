@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n-title="settingsTitle">YTM AI Filter</title>
+<link rel="stylesheet" href="../shared/ui.css">
+<link rel="stylesheet" href="options.css">
+</head>
+<body>
+<main class="wrap">
+  <header class="top">
+    <div class="brand">
+      <div class="logo big">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#121214" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/><line x1="3" y1="3" x2="21" y2="21"/></svg>
+      </div>
+      <div>
+        <h1>YTM AI Filter</h1>
+        <p class="muted" data-i18n="tagline"></p>
+      </div>
+    </div>
+    <div class="top-right">
+      <span class="muted small" id="saved" data-i18n="autosave"></span>
+      <label class="switch">
+        <input type="checkbox" id="enabled" data-i18n-aria="toggleFilter">
+        <span class="track"></span>
+      </label>
+    </div>
+  </header>
+
+  <section class="panel">
+    <h2 data-i18n="labelsTitle"></h2>
+    <p class="muted" data-i18n="labelsDesc"></p>
+    <div class="cards">
+      <label class="card">
+        <input type="checkbox" id="label-full">
+        <span class="box" aria-hidden="true"></span>
+        <span class="card-text">
+          <span class="card-title">Fully Gen AI</span>
+          <span class="muted" data-i18n="labelFullDesc"></span>
+        </span>
+      </label>
+      <label class="card">
+        <input type="checkbox" id="label-partly">
+        <span class="box" aria-hidden="true"></span>
+        <span class="card-text">
+          <span class="card-title">Partly Gen AI</span>
+          <span class="muted" data-i18n="labelPartlyDesc"></span>
+        </span>
+      </label>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2 data-i18n="actionsTitle"></h2>
+    <p class="muted" data-i18n="actionsDesc"></p>
+    <div class="rows">
+      <div class="row">
+        <div class="row-text"><label for="act-skip" data-i18n="actSkip"></label><span class="muted" data-i18n="actSkipDesc"></span></div>
+        <span class="switch"><input type="checkbox" id="act-skip"><span class="track"></span></span>
+      </div>
+      <div class="row">
+        <div class="row-text"><label for="act-dislike" data-i18n="actDislike"></label><span class="muted" data-i18n="actDislikeDesc"></span></div>
+        <span class="switch"><input type="checkbox" id="act-dislike"><span class="track"></span></span>
+      </div>
+      <div class="row">
+        <div class="row-text"><label for="act-autoBlock" data-i18n="actAutoBlock"></label><span class="muted" data-i18n="actAutoBlockDesc"></span></div>
+        <span class="switch"><input type="checkbox" id="act-autoBlock"><span class="track"></span></span>
+      </div>
+      <div class="row">
+        <div class="row-text"><label for="act-skipBlocked" data-i18n="actSkipBlocked"></label><span class="muted" data-i18n="actSkipBlockedDesc"></span></div>
+        <span class="switch"><input type="checkbox" id="act-skipBlocked"><span class="track"></span></span>
+      </div>
+      <div class="row">
+        <div class="row-text"><label for="act-toast" data-i18n="actToast"></label><span class="muted" data-i18n="actToastDesc"></span></div>
+        <span class="switch"><input type="checkbox" id="act-toast"><span class="track"></span></span>
+      </div>
+      <div class="row">
+        <div class="row-text"><label for="delay" data-i18n="delay"></label><span class="muted" data-i18n="delayDesc"></span></div>
+        <select id="delay" class="input">
+          <option value="0" data-i18n="delay0"></option>
+          <option value="2" data-i18n="delay2"></option>
+          <option value="5" data-i18n="delay5"></option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2 data-i18n="blocklistTitle"></h2>
+    <p class="muted" data-i18n="blocklistDesc"></p>
+    <form class="add" id="blockForm">
+      <label for="blockInput" class="sr-only" data-i18n="addArtist"></label>
+      <input id="blockInput" class="input" data-i18n-placeholder="artistName" autocomplete="off">
+      <button class="btn primary" type="submit" data-i18n="add"></button>
+    </form>
+    <ul class="list" id="blocklist"></ul>
+    <p class="muted empty" id="blockEmpty" data-i18n="emptyBlocklist"></p>
+  </section>
+
+  <section class="panel">
+    <h2 data-i18n="whitelistTitle"></h2>
+    <p class="muted" data-i18n="whitelistDesc"></p>
+    <form class="add" id="whiteForm">
+      <label for="whiteInput" class="sr-only" data-i18n="addArtist"></label>
+      <input id="whiteInput" class="input" data-i18n-placeholder="artistName" autocomplete="off">
+      <button class="btn" type="submit" data-i18n="add"></button>
+    </form>
+    <div class="chips" id="whitelist"></div>
+  </section>
+
+  <details class="panel adv">
+    <summary><h2 data-i18n="advancedTitle"></h2></summary>
+    <p class="muted" data-i18n="advancedDesc"></p>
+    <div class="patterns">
+      <label for="pat-full"><span data-i18n="patFull"></span></label>
+      <textarea id="pat-full" class="input area" rows="3" spellcheck="false"></textarea>
+      <label for="pat-partly"><span data-i18n="patPartly"></span></label>
+      <textarea id="pat-partly" class="input area" rows="3" spellcheck="false"></textarea>
+    </div>
+  </details>
+
+  <section class="panel data">
+    <div>
+      <h2 data-i18n="dataTitle"></h2>
+      <p class="muted" data-i18n="dataDesc"></p>
+    </div>
+    <div class="btns">
+      <button class="btn" id="exportBtn" data-i18n="export"></button>
+      <button class="btn" id="importBtn" data-i18n="import"></button>
+      <input type="file" id="importFile" accept="application/json" hidden>
+      <button class="btn danger" id="resetStatsBtn" data-i18n="resetStats"></button>
+      <button class="btn danger" id="resetAllBtn" data-i18n="resetAll"></button>
+    </div>
+  </section>
+  <p class="muted small foot" id="msg" role="status"></p>
+</main>
+<script src="../shared/i18n.js"></script>
+<script src="../shared/detect.js"></script>
+<script src="../shared/settings.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+{
+  "extName": {
+    "message": "YTM AI Filter — skip AI music on YouTube Music"
+  },
+  "extDescription": {
+    "message": "Skips, dislikes or blocks tracks that YouTube Music labels as AI-generated. You choose which labels and actions."
+  },
+  "toggleFilter": {
+    "message": "Turn the filter on or off"
+  },
+  "filterOn": {
+    "message": "Filter is on"
+  },
+  "filterOff": {
+    "message": "Filter is off"
+  },
+  "nowPlaying": {
+    "message": "Now playing"
+  },
+  "noTrack": {
+    "message": "Nothing playing"
+  },
+  "openYtm": {
+    "message": "Open music.youtube.com in this tab"
+  },
+  "blockArtist": {
+    "message": "Block artist"
+  },
+  "notAi": {
+    "message": "Not AI"
+  },
+  "stats": {
+    "message": "Stats"
+  },
+  "skippedToday": {
+    "message": "skipped today"
+  },
+  "skippedTotal": {
+    "message": "skipped total"
+  },
+  "artistsBlocked": {
+    "message": "artists blocked"
+  },
+  "activeRules": {
+    "message": "Active rules"
+  },
+  "openSettings": {
+    "message": "Open settings →"
+  },
+  "ruleSkip": {
+    "message": "Skip"
+  },
+  "ruleDislike": {
+    "message": "Dislike"
+  },
+  "ruleAutoBlock": {
+    "message": "Auto-block artist"
+  },
+  "ruleSkipBlocked": {
+    "message": "Skip blocked artists"
+  },
+  "ruleToast": {
+    "message": "Notifications"
+  },
+  "reasonBlocked": {
+    "message": "Blocked artist"
+  },
+  "statusChecking": {
+    "message": "Checking…"
+  },
+  "statusClean": {
+    "message": "No AI label"
+  },
+  "statusLabelIgnored": {
+    "message": "Label not in your filter"
+  },
+  "statusWhitelisted": {
+    "message": "Artist is whitelisted"
+  },
+  "statusPending": {
+    "message": "Skipping soon…"
+  },
+  "statusActed": {
+    "message": "Handled"
+  },
+  "statusDetected": {
+    "message": "Detected, no actions on"
+  },
+  "statusCancelled": {
+    "message": "Cancelled by you"
+  },
+  "undo": {
+    "message": "Undo"
+  },
+  "toastSkipping": {
+    "message": "Skipping AI track"
+  },
+  "toastDetected": {
+    "message": "AI track detected"
+  },
+  "settingsTitle": {
+    "message": "YTM AI Filter — settings"
+  },
+  "tagline": {
+    "message": "Skips tracks with an AI label on music.youtube.com"
+  },
+  "autosave": {
+    "message": "Changes save automatically"
+  },
+  "savedNow": {
+    "message": "Saved"
+  },
+  "labelsTitle": {
+    "message": "Which labels to act on"
+  },
+  "labelsDesc": {
+    "message": "YouTube Music shows a label in the player. Choose which ones the extension reacts to."
+  },
+  "labelFullDesc": {
+    "message": "The whole track is generated: music and vocals."
+  },
+  "labelPartlyDesc": {
+    "message": "AI made part of the track, e.g. vocals. Real artists can be here too."
+  },
+  "actionsTitle": {
+    "message": "What to do with such a track"
+  },
+  "actionsDesc": {
+    "message": "Actions run as soon as the label appears in the player."
+  },
+  "actSkip": {
+    "message": "Skip the track"
+  },
+  "actSkipDesc": {
+    "message": "Jump to the next one right away."
+  },
+  "actDislike": {
+    "message": "Dislike it 👎"
+  },
+  "actDislikeDesc": {
+    "message": "A signal to recommendations; also affects your phone. Needs you to be signed in."
+  },
+  "actAutoBlock": {
+    "message": "Add the artist to the blocklist"
+  },
+  "actAutoBlockDesc": {
+    "message": "Their next tracks are skipped before the label even appears."
+  },
+  "actSkipBlocked": {
+    "message": "Skip blocklisted artists"
+  },
+  "actSkipBlockedDesc": {
+    "message": "Even when the track has no label."
+  },
+  "actToast": {
+    "message": "Show notifications"
+  },
+  "actToastDesc": {
+    "message": "A small message on the page with an Undo button."
+  },
+  "delay": {
+    "message": "Delay before acting"
+  },
+  "delayDesc": {
+    "message": "Time to press Undo in the notification"
+  },
+  "delay0": {
+    "message": "Immediately"
+  },
+  "delay2": {
+    "message": "2 seconds"
+  },
+  "delay5": {
+    "message": "5 seconds"
+  },
+  "blocklistTitle": {
+    "message": "Artist blocklist"
+  },
+  "blocklistDesc": {
+    "message": "Tracks by these artists are skipped right away, even without a label."
+  },
+  "addArtist": {
+    "message": "Add an artist"
+  },
+  "artistName": {
+    "message": "Artist name"
+  },
+  "add": {
+    "message": "Add"
+  },
+  "remove": {
+    "message": "Remove"
+  },
+  "emptyBlocklist": {
+    "message": "The list is empty."
+  },
+  "addedAuto": {
+    "message": "Added automatically"
+  },
+  "addedManual": {
+    "message": "Added manually"
+  },
+  "whitelistTitle": {
+    "message": "Whitelist"
+  },
+  "whitelistDesc": {
+    "message": "The extension never touches these artists, even with a label."
+  },
+  "advancedTitle": {
+    "message": "Advanced: label text"
+  },
+  "advancedDesc": {
+    "message": "The exact label text the extension looks for, one per line. Add your language's version if YouTube Music shows labels translated."
+  },
+  "patFull": {
+    "message": "Fully Gen AI label text"
+  },
+  "patPartly": {
+    "message": "Partly Gen AI label text"
+  },
+  "dataTitle": {
+    "message": "Data"
+  },
+  "dataDesc": {
+    "message": "Settings sync across your Chrome browsers."
+  },
+  "export": {
+    "message": "Export"
+  },
+  "import": {
+    "message": "Import"
+  },
+  "resetStats": {
+    "message": "Reset stats"
+  },
+  "resetAll": {
+    "message": "Reset all settings"
+  },
+  "importOk": {
+    "message": "Settings imported."
+  },
+  "importFail": {
+    "message": "This file isn't a YTM AI Filter export."
+  },
+  "confirmResetStats": {
+    "message": "Reset all stats?"
+  },
+  "confirmResetAll": {
+    "message": "Reset all settings, blocklist and whitelist?"
+  },
+  "statsReset": {
+    "message": "Stats reset."
+  },
+  "allReset": {
+    "message": "Settings reset."
+  }
+}

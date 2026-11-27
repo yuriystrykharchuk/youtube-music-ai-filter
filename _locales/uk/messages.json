@@ -1,0 +1,257 @@
+{
+  "extName": {
+    "message": "YTM AI Filter — пропуск AI-музики в YouTube Music"
+  },
+  "extDescription": {
+    "message": "Пропускає, дизлайкає або блокує треки, які YouTube Music позначає як AI. Ти обираєш мітки й дії."
+  },
+  "toggleFilter": {
+    "message": "Увімкнути або вимкнути фільтр"
+  },
+  "filterOn": {
+    "message": "Фільтр увімкнено"
+  },
+  "filterOff": {
+    "message": "Фільтр вимкнено"
+  },
+  "nowPlaying": {
+    "message": "Зараз грає"
+  },
+  "noTrack": {
+    "message": "Нічого не грає"
+  },
+  "openYtm": {
+    "message": "Відкрий music.youtube.com у цій вкладці"
+  },
+  "blockArtist": {
+    "message": "Заблокувати артиста"
+  },
+  "notAi": {
+    "message": "Це не AI"
+  },
+  "stats": {
+    "message": "Статистика"
+  },
+  "skippedToday": {
+    "message": "пропущено сьогодні"
+  },
+  "skippedTotal": {
+    "message": "всього пропущено"
+  },
+  "artistsBlocked": {
+    "message": "артистів у блоці"
+  },
+  "activeRules": {
+    "message": "Активні правила"
+  },
+  "openSettings": {
+    "message": "Відкрити налаштування →"
+  },
+  "ruleSkip": {
+    "message": "Пропуск"
+  },
+  "ruleDislike": {
+    "message": "Дизлайк"
+  },
+  "ruleAutoBlock": {
+    "message": "Автоблок артиста"
+  },
+  "ruleSkipBlocked": {
+    "message": "Пропуск заблокованих"
+  },
+  "ruleToast": {
+    "message": "Сповіщення"
+  },
+  "reasonBlocked": {
+    "message": "Заблокований артист"
+  },
+  "statusChecking": {
+    "message": "Перевіряю…"
+  },
+  "statusClean": {
+    "message": "AI-мітки немає"
+  },
+  "statusLabelIgnored": {
+    "message": "Ця мітка не у фільтрі"
+  },
+  "statusWhitelisted": {
+    "message": "Артист у білому списку"
+  },
+  "statusPending": {
+    "message": "Зараз пропущу…"
+  },
+  "statusActed": {
+    "message": "Оброблено"
+  },
+  "statusDetected": {
+    "message": "Виявлено, дії вимкнені"
+  },
+  "statusCancelled": {
+    "message": "Скасовано тобою"
+  },
+  "undo": {
+    "message": "Скасувати"
+  },
+  "toastSkipping": {
+    "message": "Пропускаю AI-трек"
+  },
+  "toastDetected": {
+    "message": "Виявлено AI-трек"
+  },
+  "settingsTitle": {
+    "message": "YTM AI Filter — налаштування"
+  },
+  "tagline": {
+    "message": "Пропускає треки з AI-міткою на music.youtube.com"
+  },
+  "autosave": {
+    "message": "Зміни зберігаються автоматично"
+  },
+  "savedNow": {
+    "message": "Збережено"
+  },
+  "labelsTitle": {
+    "message": "Які мітки пропускати"
+  },
+  "labelsDesc": {
+    "message": "YouTube Music показує мітку в плеєрі. Обери, на які з них реагувати."
+  },
+  "labelFullDesc": {
+    "message": "Трек повністю згенерований: і музика, і вокал."
+  },
+  "labelPartlyDesc": {
+    "message": "AI зробив частину треку, наприклад вокал. Тут бувають і живі артисти."
+  },
+  "actionsTitle": {
+    "message": "Що робити з таким треком"
+  },
+  "actionsDesc": {
+    "message": "Дії виконуються, щойно мітка з'являється в плеєрі."
+  },
+  "actSkip": {
+    "message": "Пропустити трек"
+  },
+  "actSkipDesc": {
+    "message": "Одразу перемкнути на наступний."
+  },
+  "actDislike": {
+    "message": "Поставити 👎"
+  },
+  "actDislikeDesc": {
+    "message": "Сигнал рекомендаціям, впливає й на телефон. Потрібен вхід в акаунт."
+  },
+  "actAutoBlock": {
+    "message": "Додати артиста в чорний список"
+  },
+  "actAutoBlockDesc": {
+    "message": "Наступні його треки пропускатимуться ще до появи мітки."
+  },
+  "actSkipBlocked": {
+    "message": "Пропускати артистів із чорного списку"
+  },
+  "actSkipBlockedDesc": {
+    "message": "Навіть якщо в треку немає мітки."
+  },
+  "actToast": {
+    "message": "Показувати сповіщення"
+  },
+  "actToastDesc": {
+    "message": "Невелике повідомлення на сторінці з кнопкою «Скасувати»."
+  },
+  "delay": {
+    "message": "Затримка перед пропуском"
+  },
+  "delayDesc": {
+    "message": "Час, щоб натиснути «Скасувати» в сповіщенні"
+  },
+  "delay0": {
+    "message": "Одразу"
+  },
+  "delay2": {
+    "message": "2 секунди"
+  },
+  "delay5": {
+    "message": "5 секунд"
+  },
+  "blocklistTitle": {
+    "message": "Чорний список артистів"
+  },
+  "blocklistDesc": {
+    "message": "Треки цих артистів пропускаються одразу, навіть якщо мітки немає."
+  },
+  "addArtist": {
+    "message": "Додати артиста"
+  },
+  "artistName": {
+    "message": "Ім'я артиста"
+  },
+  "add": {
+    "message": "Додати"
+  },
+  "remove": {
+    "message": "Прибрати"
+  },
+  "emptyBlocklist": {
+    "message": "Список порожній."
+  },
+  "addedAuto": {
+    "message": "Додано автоматично"
+  },
+  "addedManual": {
+    "message": "Додано вручну"
+  },
+  "whitelistTitle": {
+    "message": "Білий список"
+  },
+  "whitelistDesc": {
+    "message": "Цих артистів розширення ніколи не чіпає, навіть із міткою."
+  },
+  "advancedTitle": {
+    "message": "Додатково: текст міток"
+  },
+  "advancedDesc": {
+    "message": "Точний текст мітки, який шукає розширення, по одному в рядку. Додай переклад, якщо YouTube Music показує мітки твоєю мовою."
+  },
+  "patFull": {
+    "message": "Текст мітки Fully Gen AI"
+  },
+  "patPartly": {
+    "message": "Текст мітки Partly Gen AI"
+  },
+  "dataTitle": {
+    "message": "Дані"
+  },
+  "dataDesc": {
+    "message": "Налаштування синхронізуються між твоїми браузерами Chrome."
+  },
+  "export": {
+    "message": "Експорт"
+  },
+  "import": {
+    "message": "Імпорт"
+  },
+  "resetStats": {
+    "message": "Скинути статистику"
+  },
+  "resetAll": {
+    "message": "Скинути все"
+  },
+  "importOk": {
+    "message": "Налаштування імпортовано."
+  },
+  "importFail": {
+    "message": "Це не файл експорту YTM AI Filter."
+  },
+  "confirmResetStats": {
+    "message": "Скинути всю статистику?"
+  },
+  "confirmResetAll": {
+    "message": "Скинути всі налаштування, чорний і білий списки?"
+  },
+  "statsReset": {
+    "message": "Статистику скинуто."
+  },
+  "allReset": {
+    "message": "Налаштування скинуто."
+  }
+}

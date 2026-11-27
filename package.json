@@ -1,0 +1,13 @@
+{
+  "name": "ytm-ai-filter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chrome extension that skips, dislikes or blocks AI-labelled tracks on YouTube Music.",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jsdom": "^25.0.0"
+  }
+}
